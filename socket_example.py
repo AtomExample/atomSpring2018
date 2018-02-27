@@ -13,7 +13,7 @@ serversocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 serversocket.bind((HOSTNAME, PORT))
 serversocket.listen(CONNECTION_COUNT)
 
-RESPONSE_TEMPLATE = 'HTTP/1.1 200 OK\nConnection: close\n\n<h3>{response_body}</h3>\n'
+RESPONSE_TEMPLATE = 'HTTP/1.1 200 OK\nConnection: close\n\n<h2>{response_body}</h2>\n'
 
 requests_counter = 0
 
