@@ -25,7 +25,7 @@ SECRET_KEY = 'nanmq-!3@1!j9rc5p#hb0$gx!vk69-)e9g2m*^ap5q#81w1w&b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sphere.greyone.ru', ]
+ALLOWED_HOSTS = ['sphere.greyone.ru', 'atom.greyone.ru']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'posts',
 ]
 
 MIDDLEWARE = [
