@@ -1,9 +1,11 @@
-<html>
-<head>
-</head>
-<body>
-    {% for article in articles %}
-        <h1>{{article.title}}</h1>
-    {% endfor %}
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+    {% if articles %}
+        <div style="background-color:red">
+            {% for article in articles %}
+                <h1>{{article.title}}</h1>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endblock %}
