@@ -2,9 +2,15 @@
 
 {% block content %}
     {% if articles %}
-        <div style="background-color:red">
+        <div class="article_list_container">
             {% for article in articles %}
-                <h1>{{article.title}}</h1>
+                <div class="article_container">
+                    <h1 class="article_header">{{article.title}}</h1>
+                    <p class="article_body">
+                        <span>Текст статьи:</span>
+                        {{article.text}}
+                    </p>
+                </div>
             {% endfor %}
         </div>
     {% endif %}
